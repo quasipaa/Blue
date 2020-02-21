@@ -2,7 +2,7 @@
     "name": "blue",
     "version": "0.0.1",
     "main": "./build/Release/blue.node",
-    "license": "GNU",
+    "license": "GPL",
     "description": "Node.js Bluetooth device interface on Raspberry Pi.",
     "author": "Mr.Panda <xivistudios@gmail.com> (https://github.com/quasipaa)",
     "homepage": "https://github.com/quasipaa/Blue",
