@@ -1,0 +1,28 @@
+{
+    "name": "blue",
+    "version": "0.0.1",
+    "main": "./build/Release/blue.node",
+    "license": "GNU",
+    "description": "Node.js Bluetooth device interface on Raspberry Pi.",
+    "author": "Mr.Panda <xivistudios@gmail.com> (https://github.com/quasipaa)",
+    "homepage": "https://github.com/quasipaa/Blue",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/quasipaa/Blue"
+    },
+    "scripts": {
+        "build": "node-gyp configure && node-gyp build"
+    },
+    "keywords": [
+        "raspberry pi",
+        "bluetooth",
+        "bluez",
+        "abi",
+        "napi"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "node-addon-api": "*",
+        "node-gyp": "*"
+    }
+}
