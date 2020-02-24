@@ -83,11 +83,9 @@ bt_inquiry bluetooth_scan () {
         memset(name, 0, sizeof(name));
         if (hci_read_remote_name(sock, &(q_info+i)->bdaddr, sizeof(name), name, 0) < 0) {
             strcpy(name, "[unknown]");
+            strcpy(result.devices[i].address, addr);
+            strcpy(result.devices[i].name, name);
         }
-        
-        // 复制信息到结果
-        strcpy(result.devices[i].address, addr);
-        strcpy(result.devices[i].name, name);
     }
 
     // 结束清理
