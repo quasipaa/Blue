@@ -11,7 +11,8 @@
         "url": "https://github.com/quasipaa/Blue"
     },
     "scripts": {
-        "build": "node-gyp configure && node-gyp build"
+        "build": "node-gyp configure && node-gyp build",
+        "dev": "gcc -o note ./note/main.c -lbluetooth"
     },
     "keywords": [
         "raspberry pi",
@@ -22,6 +23,7 @@
     ],
     "dependencies": {},
     "devDependencies": {
+        "@types/node": "^13.7.4",
         "node-addon-api": "*",
         "node-gyp": "*"
     }
